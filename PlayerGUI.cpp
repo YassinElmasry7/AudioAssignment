@@ -6,7 +6,7 @@ PlayerGUI::PlayerGUI()
     addAndMakeVisible(progressBar.get());
 
     for (auto* btn : { &loadButton, &restartButton , &playButton, &pauseButton, &gostartButton, &goendButton, &muteButton, &loopButton,
-        &addlistButton, &removelistButton, &clearlistButton, &setPointAButton, &setPointBButton, &clearLoopPointsButton  })
+        &addlistButton, &removelistButton,   &clearlistButton, &setPointAButton, &setPointBButton, &clearLoopPointsButton  })
     {
         btn->addListener(this);
         btn->setColour(juce::TextButton::textColourOffId, juce::Colours::white);
@@ -397,4 +397,5 @@ void PlayerGUI::displayMetadata(const juce::File& file)
 
         delete reader;
     }
+
 }
