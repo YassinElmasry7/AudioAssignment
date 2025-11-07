@@ -6,8 +6,10 @@ PlayerAudio::PlayerAudio()
     resampleSource = std::make_unique<juce::ResamplingAudioSource>(&transportSource, false, 2);
 }
 
+
 PlayerAudio::~PlayerAudio()
 {
+    
 }
 bool PlayerAudio::loadFile(const juce::File& file)
 {
@@ -151,3 +153,4 @@ bool PlayerAudio::isSegmentLooping() const
 {
     return segmentLooping;
 }
+
