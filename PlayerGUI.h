@@ -22,8 +22,8 @@ public:
     void timerCallback() override;
 
 private:
-    PlayerAudio playerAudio;
 
+    PlayerAudio playerAudio;
     juce::TextButton loadButton{ "Load Files" };
     juce::TextButton restartButton{ "Restart" };
     juce::TextButton playButton{ "Play" };
@@ -143,4 +143,5 @@ private:
     void updateLoopPointsLabel();
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(PlayerGUI)
+
 };
