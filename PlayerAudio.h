@@ -6,7 +6,6 @@ class PlayerAudio : public juce::AudioSource
 public:
 	PlayerAudio();
 	~PlayerAudio();
-
 	void prepareToPlay(int samplesPerBlockExpected, double sampleRate);
 	void getNextAudioBlock(const juce::AudioSourceChannelInfo& bufferToFill);
 	void releaseResources();
@@ -36,4 +35,5 @@ private:
 	double loopStartTime = 0.0;
 	double loopEndTime = 0.0;
 	bool segmentLooping = false;
+
 };
